@@ -15,7 +15,7 @@ public class Bear extends Person {
 	public void setHealth(int health) 
 	{
 		this.health = health;
-	}
+	}//health
 
 	public Bear(int damage)
 	{
@@ -28,7 +28,7 @@ public class Bear extends Person {
 	public void setDamage(int damage) 
 	{
 		this.damage = damage;
-	}
+	}//damage
 
 	public Bear(int defense)
 	{
@@ -41,6 +41,6 @@ public class Bear extends Person {
 	public void setDefense(int defense) 
 	{
 		this.defense = defense;
-	}
+	}//defense
 
 }//end of Bear
