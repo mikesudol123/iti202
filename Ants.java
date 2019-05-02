@@ -1,8 +1,20 @@
 public class Ants extends Person{
 
+  private int health;
   private int damage;
   private int defense;
-  private int health;
+  
+  public Ants(int health) {
+    this.health = health;
+  }
+  
+  public int getHealth() {
+    return health;
+  }
+  
+  public void setHealth(int health) {
+    this.health = health;
+  }//end of health
   
   public Ants(int damage) {
     this.damage = damage;
@@ -28,17 +40,5 @@ public class Ants extends Person{
     this.defense = defense;
   }//end of defense
   
-  public Ants(int health) {
-    this.health = health;
-  }
-  
-  public int getHealth() {
-    return health;
-  }
-  
-  public void setHealth(int health) {
-    this.health = health;
-  }//end of health 
-  
-}
+}//end of Ants class
 
