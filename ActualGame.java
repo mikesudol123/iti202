@@ -42,8 +42,6 @@ public class ActualGame {
 
 	public void navigation(int d) {
 		if(location==4) {
-			System.out.println("you are in an empty room");
-				System.out.println("Where would you like to go, please enter a cardinal directon");
 				if(d==1) {
 					System.out.println("you exit the door to the north, a nice smell fills your nose");
 					location = 1;
@@ -101,7 +99,10 @@ public class ActualGame {
 			}
 		}
 		else if(location == 3) {
+			if(hasTrap1 == true){
+				p.setHealth(p.getHealth() - 7);
 			hasTrap1 = false;
+		}
 				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("there is no door to the north");
@@ -142,7 +143,11 @@ public class ActualGame {
 			}
 		}
 		else if(location == 6) {
-			  hasBear = false;
+			if(hasBear == true){
+				p.setHealth(p.getHealth() - b.getDamage());
+				System.out.println("You are attacked by a bear and take" + b.getDamage() + "damage, your current health is" + p.getHealth());
+			hasBear = false;
+		}
 				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("ANTZ");
@@ -189,7 +194,11 @@ public class ActualGame {
 			}
 		}
 		else if(location == 8) {
+			if(hasTrap2 == true){
+				p.setHealth(p.getHealth() - 5);
+				System.out.println("your current health is" + p.getHealth());
 			hasTrap2 = false;
+		}
 				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("you find a ancient axe with akash inlayed in it");
@@ -237,7 +246,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 10) {
-
+				System.out.println("You step in quicksand and take some damage, your current health is" + p.getHealth());
 				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("there is no north door");

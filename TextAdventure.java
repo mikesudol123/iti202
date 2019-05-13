@@ -27,6 +27,9 @@ public class TextAdventure extends ActualGame{
 		int x;
 
 
+		System.out.println("you are in an empty room");
+			System.out.println("Where would you like to go, please enter a cardinal directon");
+
 		while(game.gameOver==false && game.p.getHealth() > 0){
 			nav="";
 			x=0;
