@@ -57,8 +57,12 @@ public class ActualGame {
 }
 
 		else if(location == 1) {
-				System.out.println("Where would you like to go, please enter a cardinal directon");
+				if (hasDinner = true){
+				p.setHealth(p.getHealth() + 10);
+				System.out.println("You eat a turkey leg the size of your health and feel refreshed (gain 10 health). Your current health is " + p.getHealth());
 				hasDinner = false;
+			}
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("You exit the north door and find youself in a long hallway, the door to your east glows and you hear a roar to the north");
 				location = 13;
@@ -83,7 +87,7 @@ public class ActualGame {
 				if(hasSword = false){
 					p.setDamage(p.getDamage() + 10);
 					System.out.println("you pick up a sword your damage is now " + p.getDamage());
-hasSword = true;
+					hasSword = true;
 
 }
 				System.out.println("Where would you like to go, please enter a cardinal directon");
