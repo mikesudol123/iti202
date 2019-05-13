@@ -10,8 +10,9 @@ public class Ants extends Person{
 
   }
 
-  public Ants(int health) {
+  public Ants(int health, int damage) {
     this.health = health;
+    this.damage = damage;
   }
 
   public int getHealth() {
@@ -22,10 +23,6 @@ public class Ants extends Person{
     this.health = health;
   }//end of health
 
-  public Ants(int damage) {
-    this.damage = damage;
-  }
-
   public int getDamage() {
     return damage;
   }
@@ -33,6 +30,5 @@ public class Ants extends Person{
   public void setDamage(int damage) {
     this.damage = damage;
   }//end of damage
-
 
 }//end of Ants class
