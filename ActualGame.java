@@ -80,7 +80,12 @@ public class ActualGame {
 		}
 
 		else if(location == 2) {
-			hasSword = true;
+				if(hasSword = false){
+					p.setDamage(p.getDamage() + 10);
+					System.out.println("you pick up a sword your damage is now " + p.getDamage());
+hasSword = true;
+
+}
 				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("You exit the north door and find yourself face to face with a ancient knight holding a massive glowing sword");
@@ -270,6 +275,7 @@ public class ActualGame {
 
 		}
 		else if(location == 12) {
+			hasBlade = true;
 				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("there is no north door");
