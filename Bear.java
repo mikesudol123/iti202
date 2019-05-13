@@ -29,17 +29,6 @@ public class Bear extends Person {
 		this.damage = damage;
 	}//damage
 
-	public Bear(int defense)
-	{
-		this.defense = defense;
-	}
-	public int getDefense()
-	{
-		return defense;
-	}
-	public void setDefense(int defense)
-	{
-		this.defense = defense;
-	}//defense
+
 
 }//end of Bear

@@ -1,4 +1,4 @@
-package knight;
+ 
 
 public abstract class Person {
 

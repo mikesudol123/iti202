@@ -22,9 +22,6 @@ public class Dragon extends Person{
 	public void setDamage(int damage){
 		this.damage = damage;
 	}
-	public void setDefense(int defense){
-		this.defense = defense;
-	}
 	public int getHealth(){
 		return this.health;
 	}

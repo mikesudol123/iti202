@@ -35,18 +35,6 @@ public class Player extends Person {
       this.damage = damage;
     }//damage
 
-    public Player(int defense)
-    {
-      this.defense = defense;
-    }
-    public int getDefense()
-    {
-      return defense;
-    }
-    public void setDefense(int defense)
-    {
-      this.defense = defense;
-    }//defense
 
   }//end of Player
 

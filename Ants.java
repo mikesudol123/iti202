@@ -34,16 +34,5 @@ public class Ants extends Person{
     this.damage = damage;
   }//end of damage
 
-  public Ants(int defense) {
-    this.defense = defense;
-  }
-
-  public int getDefense() {
-    return defense;
-  }
-
-  public void setDefense(int defense) {
-    this.defense = defense;
-  }//end of defense
 
 }//end of Ants class
