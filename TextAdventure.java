@@ -32,9 +32,9 @@ public class TextAdventure extends ActualGame{
 			x = 1;
 			else if (nav.equals("south"))
 			x = 2;
-			else if (nav.equals("west"))
-			x = 3;
 			else if (nav.equals("east"))
+			x = 3;
+			else if (nav.equals("west"))
 			x = 4;
 
 			game.navigation(x);
