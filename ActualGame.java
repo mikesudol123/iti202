@@ -28,7 +28,7 @@ public class ActualGame {
 
 	public void navigation(int d) {
 		if(location==4) {
-			System.out.println("you are in an empty room");{
+			System.out.println("you are in an empty room");
 				if(d==1) {
 					System.out.println("you exit the door to the north, a nice smell fills your nose");
 					location = 1;
@@ -41,7 +41,7 @@ public class ActualGame {
 					System.out.println("there is no door to the south or east");
 
 				}
-			}
+}
 
 		else if(location == 1) {
 			if(d==1) {
