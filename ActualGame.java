@@ -1,6 +1,6 @@
 public class ActualGame extends AbsClass {
 
-
+	//Declare boolean values for items and monsters to be used later for gaining health or taking damage.  
 	boolean gameOver = false;
 	boolean hasBlade = false;
 	boolean hasSword = false;
@@ -10,7 +10,8 @@ public class ActualGame extends AbsClass {
 	boolean hasDinner = true;
 	boolean hasTrap1 = true;
 	boolean hasTrap2 = true;
-
+	
+	//Declare monsters and player. 
 	Ants ant = new Ants();
 	Bear b = new Bear();
 	Dragon d = new Dragon();
@@ -18,9 +19,9 @@ public class ActualGame extends AbsClass {
 
 
 	String[] rooms = new String[13];
-
+	
+	//Player begins in the empty room.
 	int location = 4;
-
 
 	public void populateRooms() {
 		rooms[0] = "Chicken Dinner";
@@ -43,7 +44,8 @@ public class ActualGame extends AbsClass {
 	{
 	System.out.println("Demonstration for abstraction");
 	}
-
+	
+	//Set up game navigation based on input. 
 	public void navigation(int d) {
 		if(location==4) {
 				if(d==1) {
