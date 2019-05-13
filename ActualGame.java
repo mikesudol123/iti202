@@ -163,10 +163,10 @@ public class ActualGame {
 			}
 		}
 		else if(location == 7) {
-			if(game.hasAnts == true){
+			if(hasAnts == true){
 
-			game.p.setHealth(game.p.getHealth() - game.ant.getDamage());
-			System.out.println("You get attacked by ants your Current Health is " + game.p.getHealth);
+			p.setHealth(p.getHealth() - ant.getDamage());
+			System.out.println("You get attacked by ants your Current Health is " + p.getHealth());
 			hasAnts = false;
 
 		}
