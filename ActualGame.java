@@ -3,6 +3,13 @@ public class ActualGame {
 
 
 	boolean gameOver = false;
+	boolean hasBlade = false;
+	boolean hasSword = false;
+	boolean hasBear = true;
+	boolean hasAnts = true;
+	boolean hasDragon = true;
+
+
 
 	String[] rooms = new String[13];
 
@@ -29,6 +36,7 @@ public class ActualGame {
 	public void navigation(int d) {
 		if(location==4) {
 			System.out.println("you are in an empty room");
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 				if(d==1) {
 					System.out.println("you exit the door to the north, a nice smell fills your nose");
 					location = 1;
@@ -44,6 +52,7 @@ public class ActualGame {
 }
 
 		else if(location == 1) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("You exit the north door and find youself in a long hallway, the door to your east glows and you hear a roar to the north");
 				location = 13;
@@ -65,6 +74,7 @@ public class ActualGame {
 		}
 
 		else if(location == 2) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("You exit the north door and find yourself face to face with a ancient knight holding a massive glowing sword");
 				location = 5;
@@ -82,6 +92,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 3) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("there is no door to the north");
 
@@ -101,6 +112,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 5) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("there is no north door");
 			}
@@ -119,6 +131,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 6) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("ANTZ");
 				location = 7;
@@ -138,6 +151,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 7) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("there is no north door");
 			}
@@ -156,6 +170,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 8) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("you find a ancient axe with akash inlayed in it");
 				location = 12;
@@ -174,6 +189,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 9) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("You see crumbling walls but are suddnly sinking into the floor, its quicksand");
 				location = 10;
@@ -192,6 +208,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 10) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("there is no north door");
 			}
@@ -214,6 +231,7 @@ public class ActualGame {
 
 		}
 		else if(location == 12) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("there is no north door");
 			}
@@ -231,6 +249,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 13) {
+				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("You have entered the dragons lair, better have a good sword");
 				location = 9;
@@ -242,6 +261,7 @@ public class ActualGame {
 			}
 			else if(d==3) {
 				System.out.println("You see a knight with a glowing sword, he hands it over to you");
+				location = 5;
 			}
 			else if(d==4) {
 				System.out.println("no west door");
