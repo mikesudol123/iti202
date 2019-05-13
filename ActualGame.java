@@ -110,8 +110,13 @@ public class ActualGame extends AbsClass {
 				System.out.println("There is no door to the east.");
 			}
 			else if(d==4) {
-				System.out.println("Yer in a large dining room.");
+				if (hasDinner = true){
+				p.setHealth(p.getHealth() + 10);
+				System.out.println("Ye enter a dining room and feast! (gain 12 health). Your current health is: " + p.getHealth());
+				hasDinner = false;
 				location = 1;
+				}
+			}
 
 			}
 		}
