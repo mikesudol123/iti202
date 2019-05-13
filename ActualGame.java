@@ -1,4 +1,4 @@
-public class ActualGame extends absClass {
+public class ActualGame extends AbsClass {
 
 
 	boolean gameOver = false;
