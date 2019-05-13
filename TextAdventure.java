@@ -21,6 +21,7 @@ public class TextAdventure extends ActualGame{
 		Ants ant = new Ants();
 		Bear b = new Bear();
 		Dragon d = new Dragon();
+		Player p = new Player();
 
 		game.populateRooms();
 
@@ -29,7 +30,7 @@ public class TextAdventure extends ActualGame{
 		int x;
 
 
-		while(game.gameOver==false){
+		while(game.gameOver==false && p.getHealth != 0){
 			nav="";
 			x=0;
 
@@ -42,6 +43,10 @@ public class TextAdventure extends ActualGame{
 			x = 3;
 			else if (nav.equals("west"))
 			x = 4;
+			else if (nav.equals("health"))
+			System.out.println(p.getHealth);
+			else if (nav.equals("damage"))
+			System.out.println(p.getDamage);
 
 			game.navigation(x);
 			nav="";
