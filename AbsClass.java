@@ -1,4 +1,4 @@
-public abstract class absClass {
+public abstract class AbsClass {
 
 	public abstract void abs();
 	
