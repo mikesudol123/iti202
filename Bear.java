@@ -3,6 +3,12 @@ public class Bear extends Person {
 	private int health = 5;
 	private int damage = 5;
 
+	public Bear(){
+		health = 5;
+		damage = 5;
+
+	}
+
 	public Bear(int health, int damage)
 	{
 		this.health = health;
