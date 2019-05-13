@@ -81,8 +81,12 @@ public class ActualGame extends absClass {
 				location = 2;
 			}
 			else if(d==4) {
-				System.out.println("ACK! Yer leg gets caught in a bear trap.");
+				if(hasTrap1 == true){
+				p.setHealth(p.getHealth() - 7);
+				hasTrap1 = false;
+				System.out.println("ACK! Your leg gets caught in a bear trap (lose 7 health). Your current health is: " + p.getHealth());
 				location = 3;
+				}
 
 			}
 		}
