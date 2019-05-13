@@ -255,6 +255,7 @@ public class ActualGame {
 			}
 		}
 		else if(location == 10) {
+				p.setHealth(p.getHealth() - 5);
 				System.out.println("You step in quicksand and take some damage, your current health is" + p.getHealth());
 				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
