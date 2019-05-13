@@ -9,9 +9,10 @@ public class Player extends Person {
 
     }
 
-    public Player(int health)
+    public Player(int health, int damage)
     {
       this.health = health;
+      this.damage = damage;
     }
     public int getHealth()
     {
@@ -22,10 +23,6 @@ public class Player extends Person {
       this.health = health;
     }//health
 
-    public Player(int damage)
-    {
-      this.damage = damage;
-    }
     public int getDamage()
     {
       return damage;
