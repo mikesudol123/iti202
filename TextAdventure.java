@@ -7,13 +7,18 @@ public class TextAdventure extends ActualGame{
 
 	public static void main(String[] args) {
 
-		System.out.println("Game start");
-
+			System.out.println("Welcome to The Hunt for The Blade of Akash.\r\n" + "Move along into the rooms searching for The Blade of Akash.\r\n" + 
+				"Collect Armor, Health, and Defense stats.\r\n" + 
+				"Once you found The Blade of Akash, defeat the Dragon.");
+		System.out.println("Please enter your name.");
 		Scanner input = new Scanner(System.in);
-
+		String name = input.nextLine();
+		
+		System.out.println("Welcome Knight " + name + ".");
 		ActualGame game = new ActualGame();
 		game.populateRooms();
-
+		
+		
 		String nav;
 		int x;
 
