@@ -1,18 +1,17 @@
 public class Bear extends Person {
 
-	private int health;
-	private int damage;
-	private int defense;
+	private int health = 5;
+	private int damage = 5;
 
 	public Bear(int health)
 	{
 		this.health = health;
 	}
-	public int getHealth() 
+	public int getHealth()
 	{
 		return health;
 	}
-	public void setHealth(int health) 
+	public void setHealth(int health)
 	{
 		this.health = health;
 	}//health
@@ -21,11 +20,11 @@ public class Bear extends Person {
 	{
 		this.damage = damage;
 	}
-	public int getDamage() 
+	public int getDamage()
 	{
 		return damage;
 	}
-	public void setDamage(int damage) 
+	public void setDamage(int damage)
 	{
 		this.damage = damage;
 	}//damage
@@ -34,11 +33,11 @@ public class Bear extends Person {
 	{
 		this.defense = defense;
 	}
-	public int getDefense() 
+	public int getDefense()
 	{
 		return defense;
 	}
-	public void setDefense(int defense) 
+	public void setDefense(int defense)
 	{
 		this.defense = defense;
 	}//defense
