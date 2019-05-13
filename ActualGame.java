@@ -2,6 +2,8 @@
 public class ActualGame {
 
 
+	boolean gameOver = false;
+
 	String[] rooms = new String[12];
 
 	int location = 4;
@@ -209,6 +211,8 @@ public class ActualGame {
 		}
 		else if(location == 11) {
 			System.out.println("you escaped congrats");
+			gameOver = true;
+
 		}
 		else if(location == 12) {
 			if(d==1) {
@@ -242,7 +246,7 @@ public class ActualGame {
 			}
 			else if(d==4) {
 				System.out.println("no west door");
-				
+
 			}
 		}
 
