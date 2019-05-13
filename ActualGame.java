@@ -4,7 +4,7 @@ public class ActualGame {
 
 	boolean gameOver = false;
 
-	String[] rooms = new String[12];
+	String[] rooms = new String[13];
 
 	int location = 4;
 
