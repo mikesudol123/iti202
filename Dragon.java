@@ -1,4 +1,4 @@
-public class Dragon extends Person{
+public class Dragon{
 
     private int health = 10;
     private int damage = 7;
@@ -28,3 +28,5 @@ public class Dragon extends Person{
 	public int getDamage(){
 		return this.damage;
 	}
+
+}
