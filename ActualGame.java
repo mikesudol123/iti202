@@ -163,7 +163,13 @@ public class ActualGame {
 			}
 		}
 		else if(location == 7) {
+			if(game.hasAnts == true){
+
+			game.p.setHealth(game.p.getHealth() - game.ant.getDamage());
+			System.out.println("You get attacked by ants your Current Health is " + game.p.getHealth);
 			hasAnts = false;
+
+		}
 				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("there is no north door");
