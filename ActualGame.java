@@ -1,5 +1,4 @@
-
-public class ActualGame {
+public class ActualGame extends absClass {
 
 
 	boolean gameOver = false;
@@ -38,6 +37,11 @@ public class ActualGame {
 		rooms[11] = "Super Secret Axe of Akash";
 		rooms[12] = "spooky hallway";
 
+	}
+	
+	public void abs ()
+	{
+	System.out.println("Demonstration for abstraction");
 	}
 
 	public void navigation(int d) {
