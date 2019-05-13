@@ -3,9 +3,10 @@ public class Bear extends Person {
 	private int health = 5;
 	private int damage = 5;
 
-	public Bear(int health)
+	public Bear(int health, int damage)
 	{
 		this.health = health;
+		this.damage = damage;
 	}
 	public int getHealth()
 	{
@@ -16,10 +17,6 @@ public class Bear extends Person {
 		this.health = health;
 	}//health
 
-	public Bear(int damage)
-	{
-		this.damage = damage;
-	}
 	public int getDamage()
 	{
 		return damage;
