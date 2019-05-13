@@ -1,4 +1,4 @@
-public class Dragon{
+public class Dragon extends Person{
 
     private int health = 10;
     private int damage = 7;
