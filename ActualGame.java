@@ -43,7 +43,6 @@ public class ActualGame {
 				}
 			}
 
-		}
 		else if(location == 1) {
 			if(d==1) {
 				System.out.println("You exit the north door and find youself in a long hallway, the door to your east glows and you hear a roar to the north");
