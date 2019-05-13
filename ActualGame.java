@@ -209,7 +209,15 @@ public class ActualGame {
 			}
 		}
 		else if(location == 9) {
-			hasDragon = false;
+			if(hasBlade == true){
+				System.out.println("You raise your sword and the dragon is quickly smoted, as he melts in front of the power of the blade");
+				hasDragon = false;
+		}
+		else if(hasBlade == false){
+			System.out.println("You are eaten whole by the dragon as he laughs at your puny sword");
+			p.setHealth(0);
+
+		}
 				System.out.println("Where would you like to go, please enter a cardinal directon");
 			if(d==1) {
 				System.out.println("You see crumbling walls but are suddnly sinking into the floor, its quicksand");
@@ -220,7 +228,7 @@ public class ActualGame {
 
 			}
 			else if(d==3) {
-				System.out.println("CONGRATS U ESCAPED");
+				System.out.println("You exit the lair into a room filled with gold, you fill your pockets and climb ladder leading up on the surface");
 				location = 11;
 			}
 			else if(d==4) {

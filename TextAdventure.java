@@ -27,7 +27,7 @@ public class TextAdventure extends ActualGame{
 		int x;
 
 
-		while(game.gameOver==false && p.getHealth != 0){
+		while(game.gameOver==false && game.p.getHealth() > 0){
 			nav="";
 			x=0;
 
@@ -41,9 +41,9 @@ public class TextAdventure extends ActualGame{
 			else if (nav.equals("west"))
 			x = 4;
 			else if (nav.equals("health"))
-			System.out.println(game.p.getHealth);
+			System.out.println(game.p.getHealth());
 			else if (nav.equals("damage"))
-			System.out.println(game.p.getDamage);
+			System.out.println(game.p.getDamage());
 
 			game.navigation(x);
 			nav="";
