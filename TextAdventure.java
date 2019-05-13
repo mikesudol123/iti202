@@ -18,10 +18,7 @@ public class TextAdventure extends ActualGame{
 		ActualGame game = new ActualGame();
 
 
-		Ants ant = new Ants();
-		Bear b = new Bear();
-		Dragon d = new Dragon();
-		Player p = new Player();
+
 
 		game.populateRooms();
 
@@ -44,9 +41,9 @@ public class TextAdventure extends ActualGame{
 			else if (nav.equals("west"))
 			x = 4;
 			else if (nav.equals("health"))
-			System.out.println(p.getHealth);
+			System.out.println(game.p.getHealth);
 			else if (nav.equals("damage"))
-			System.out.println(p.getDamage);
+			System.out.println(game.p.getDamage);
 
 			game.navigation(x);
 			nav="";

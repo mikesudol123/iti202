@@ -12,7 +12,10 @@ public class ActualGame {
 	boolean hasTrap1 = true;
 	boolean hasTrap2 = true;
 
-
+	Ants ant = new Ants();
+	Bear b = new Bear();
+	Dragon d = new Dragon();
+	Player p = new Player();
 
 
 	String[] rooms = new String[13];
