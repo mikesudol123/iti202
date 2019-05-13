@@ -12,7 +12,7 @@ public class TextAdventure extends ActualGame{
 		Scanner input = new Scanner(System.in);
 
 		ActualGame game = new ActualGame();
-		ActualGame.populateRooms();
+		game.populateRooms();
 
 		String nav;
 		int x;
