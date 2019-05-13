@@ -16,6 +16,12 @@ public class TextAdventure extends ActualGame{
 
 		System.out.println("Welcome Knight " + name + ".");
 		ActualGame game = new ActualGame();
+
+
+		Ants ant = new Ants();
+		Bear b = new Bear();
+		Dragon d = new Dragon();
+
 		game.populateRooms();
 
 

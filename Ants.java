@@ -3,6 +3,13 @@ public class Ants extends Person{
   private int health = 1;
   private int damage = 1;
 
+
+  public Ants(){
+    health = 1;
+    damage = 1;
+
+  }
+
   public Ants(int health) {
     this.health = health;
   }
