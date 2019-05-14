@@ -113,7 +113,7 @@ public class ActualGame extends AbsClass {
 			}
 			else if(d==4) {
 				if (hasDinner = true){
-				p.setHealth(p.getHealth() + 10);
+				p.setHealth(p.getHealth() + 12);
 				System.out.println("Ye enter a dining room and feast! (gain 12 health). Your current health is: " + p.getHealth());
 				hasDinner = false;
 				location = 1;
@@ -133,13 +133,21 @@ public class ActualGame extends AbsClass {
 
 			}
 			else if(d==2) {
-				System.out.println("ACK! Ants everywhere!!");
+				if (hasTrap1 = true){
+				p.setHealth(p.getHealth() - 7);
+				System.out.println("ACK! Ants everywhere!! (lose 7 health). Your current health is: " + p.getHealth());
+				hasTrap1 = false;
 				location = 7;
+				}
 
 			}
 			else if(d==3) {
-				System.out.println("Ye enter a dining room.");
+				if (hasDinner = true){
+				p.setHealth(p.getHealth() + 12);
+				System.out.println("Ye enter a dining room and feast! (gain 12 health). Your current health is: " + p.getHealth());
+				hasDinner = false;
 				location = 1;
+				}
 			}
 			else if(d==4) {
 				System.out.println("There is no door to the east.");
@@ -186,6 +194,7 @@ public class ActualGame extends AbsClass {
 				location = 4;
 			}
 			else if(d==4) {
+				
 				System.out.println("ACK! Ye step in a bear trap! Wish that got the bear...");
 				location = 8;
 
