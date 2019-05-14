@@ -118,7 +118,7 @@ public class ActualGame extends AbsClass {
 				hasDinner = false;
 				location = 1;
 				}
-			}
+			
 
 			}
 		}
